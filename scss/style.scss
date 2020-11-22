@@ -19,9 +19,10 @@ body{
   justify-content: center;
   align-items: center;
   border: solid cyan;
+  background: url(../img/background.png);
   &__inner {
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
     background-color: blue;
     margin: 5px;
   }
@@ -81,3 +82,29 @@ body{
     }    
 }
 }
+
+.close {
+  position: sticky;
+  right: 3px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  }
+  .close:hover {
+  opacity: 1;
+  }
+  .close:before, .close:after {
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  content: ' ';
+  height: 20px;
+  width: 3px;
+  background-color: #333;
+  }
+  .close:before {
+  transform: rotate(45deg);
+  }
+  .close:after {
+  transform: rotate(-45deg);
+  }
