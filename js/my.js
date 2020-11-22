@@ -13,23 +13,29 @@ function addElement () {
 }
 
  function myFunction(){
-    const squares = document.querySelectorAll('.limit__inner');
+    
 
     const firstButton = document.querySelector('.btn');
     const secondButton = document.querySelector('.scndbtn');
 
-    firstButton.addEventListener('click', () => {
+    secondButton.addEventListener('click', () => {
+      
         
+        addElement()
+   
+})
+
+
+
+    firstButton.addEventListener('click', () => {
+        const squares = document.querySelectorAll('.limit__inner');
+
         squares.forEach(square => {
-            changeStyle (square);
+            changeStyle(square);
 
         });
     })
-    secondButton.addEventListener('click', () => {
-      
-            addElement()
-       
-    })
+    
 }
 
 myFunction()
