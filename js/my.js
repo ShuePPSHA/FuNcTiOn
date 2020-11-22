@@ -20,12 +20,7 @@ function addElement () {
         changeStyle(firstSquare);
     })
     secondButton.addEventListener('click', () => {
-        const firstTitle = titles[0];
-        const secondTitle = titles[1];
-        const lastTitle = titles[titles.length - 1];
-
-       changeColorOfSomeTitle(firstTitle);
-       deleteTilite(secondTitle);
+        addElement ()
     })
 }
 
