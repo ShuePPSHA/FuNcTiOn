@@ -23,7 +23,8 @@ body {
 
 .limit {
   width: 800px;
-  height: 300px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;

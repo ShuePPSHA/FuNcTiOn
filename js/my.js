@@ -30,7 +30,8 @@ function addElement () {
     const close = document.querySelector('.close')
 
     close.addEventListener('click', () => {
-        extInner.remove()
+        
+        extInner.removeChild(this);
     })
 }
 myFunction()

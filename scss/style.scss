@@ -13,7 +13,7 @@ body{
 
 .limit {
   width: 800px;
-  height: 300px;
+  flex-wrap: wrap;
   padding: 20px;
   display: flex;
   justify-content: center;
