@@ -1,0 +1,110 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.limit {
+  width: 800px;
+  height: 300px;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid cyan;
+}
+
+.limit__inner {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  margin: 5px;
+}
+
+.edit {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  margin: 5px;
+}
+
+.btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: orange;
+  border: solid 1px orange;
+  -webkit-transition: all 0.3s cubic-bezier(0.61, 1, 0.88, 1);
+  transition: all 0.3s cubic-bezier(0.61, 1, 0.88, 1);
+}
+
+.btn:hover {
+  border-radius: 7px;
+  background-color: grey;
+  font-size: 15px;
+}
+
+.btn:active {
+  background: #82D2FF;
+  border: 3px solid green;
+  color: green;
+  border-radius: 13px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.scndbtn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: orange;
+  border: solid 1px orange;
+  -webkit-transition: all 0.3s cubic-bezier(0.61, 1, 0.88, 1);
+  transition: all 0.3s cubic-bezier(0.61, 1, 0.88, 1);
+}
+
+.scndbtn:hover {
+  border-radius: 7px;
+  background-color: grey;
+  font-size: 15px;
+}
+
+.scndbtn:hover:active {
+  background: #82D2FF;
+  border: 3px solid green;
+  color: green;
+  border-radius: 13px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
