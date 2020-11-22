@@ -7,7 +7,7 @@ function addElement () {
     extraInner.className = "limit__inner";
     extraInner.id = "extInner";
     const mainContainer = document.querySelector('.limit');
-    mainContainer.append(extraInner);
+    mainContainer.appendChild(extraInner);
     extraInner.innerHTML = '<span class="close"></span>';
 }
 
@@ -28,11 +28,25 @@ function addElement () {
     })
 
     const close = document.querySelector('.close')
-
     close.addEventListener('click', () => {
         
-        extInner.removeChild(this);
+        extInner.remove();
     })
+
+    const cont = document.getElementsByClassName("limit");
+
+    cont.addEventListener("click", function(event) { // навешиваем один обработчик на родительский элемент
+    console.log(dots.indexOf(event.target)); // в свойстве `target` будет содержаться непосредственно тот элемент, по которому кликнули
+    });
+
+    cont.addEventListener("click", function(event) {
+        const index = squares.indexOf(event.target);
+    
+        if (~index) {
+            console.log(index);
+        }
+    });
+   
 }
 myFunction()
 
