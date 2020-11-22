@@ -24,7 +24,7 @@ body {
 .limit {
   width: 800px;
   height: 300px;
-  margin: 20px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,7 +44,7 @@ body {
   margin: 5px;
 }
 
-.edit {
+.edited {
   width: 50px;
   height: 50px;
   background-color: green;
@@ -52,6 +52,7 @@ body {
 }
 
 .btn {
+  margin: 5px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

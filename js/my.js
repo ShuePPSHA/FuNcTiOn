@@ -1,5 +1,5 @@
 function changeStyle (element) {
-    element.classList.toggle('edit');
+    element.classList.toggle("edited");
 }
 
 var i = 2;
@@ -15,13 +15,23 @@ function addElement () {
 
  function myFunction(){
     const square = document.querySelectorAll('.limit__inner');
+
     const firstButton = document.querySelector('.btn');
     const secondButton = document.querySelector('.scndbtn');
     
-    const squares = square[1,2,3];
+    const frstSquare = square[0] 
+    const scndSquare = square[1] 
+    const thrdSquare = square[2]
+    const frthSquare = square[3]
+    
+   
+    
 
     firstButton.addEventListener('click', () => {
-        changeStyle(squares);
+        changeStyle(frstSquare);
+        changeStyle(scndSquare);
+        changeStyle(thrdSquare);
+        changeStyle(frthSquare);
     })
     secondButton.addEventListener('click', () => {
         if ( i % 2 == 0 ){
