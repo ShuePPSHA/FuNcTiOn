@@ -1,26 +1,37 @@
 function changeStyle (element) {
-    element.className = 'edited'
+    element.classList.toggle('edit');
 }
+
+var i = 2;
+
 function addElement () {
-    const extraInner = document.createElement('div')
+    const extraInner = document.createElement('div');
     extraInner.className = "limit__inner";
-    const mainContainer = document.querySelector('limit')
+    extraInner.id = "extInner";
+    const mainContainer = document.querySelector('.limit');
     mainContainer.append(extraInner);
 }
 
 
  function myFunction(){
-    const squares = document.querySelectorAll('limit__inner')
-    const button = document.querySelector('btn')
-    const secondButton = document.querySelector('scndbtn')
+    const square = document.querySelectorAll('.limit__inner');
+    const firstButton = document.querySelector('.btn');
+    const secondButton = document.querySelector('.scndbtn');
     
+    const squares = square[1,2,3];
 
-    button.addEventListener('click', () => {
-        const firstSquare = squares[0];
-        changeStyle(firstSquare);
+    firstButton.addEventListener('click', () => {
+        changeStyle(squares);
     })
     secondButton.addEventListener('click', () => {
-        addElement ()
+        if ( i % 2 == 0 ){
+            addElement()
+        }
+        else{
+            
+            extInner.remove()
+        }
+        i++;
     })
 }
 
