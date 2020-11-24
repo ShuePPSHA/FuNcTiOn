@@ -14,7 +14,7 @@ function deleteElement(id){
     const secondButton = document.querySelector('.scndbtn');
 
     secondButton.addEventListener('click', () => {
-        const text = document.getElementsByClassName('note').textContent;
+        const text = document.getElementById("nt").textContent; 
         function addElement () {
             const extraInner = document.createElement('div');
             const date = new Date
