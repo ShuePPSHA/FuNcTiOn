@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
     <title>Что ж</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto&display=swap" rel="stylesheet"> 
 </head>
 <body>
    
         <div class="limit">
-            <div class="limit__inner" id="extInner"><span class="close" onclick='deleteElement("extInner")'></span></div>
-            <div class="limit__inner" id="extInner1"><span class="close" onclick='deleteElement("extInner1")'></span>2</div>
-            <div class="limit__inner" id="extInner2"><span class="close" onclick='deleteElement("extInner2")' ></span>3</div>
+            <div class="limit__inner" id="extInner">
+                <span class="close" onclick='deleteElement("extInner")'></span>
+                <form action=""><textarea class="notice" name="" id="" cols="30" rows="10" ></textarea></form>    
+            </div>
+            <div class="limit__inner" id="extInner1"><span class="close" onclick='deleteElement("extInner1")'></span>2<form action=""><textarea class="notice" name="" id="" cols="30" rows="10" ></textarea></form></div>
+            <div class="limit__inner" id="extInner2"><span class="close" onclick='deleteElement("extInner2")' ></span>3<form action=""><textarea class="notice" name="" id="" cols="30" rows="10" ></textarea></form></div>
         </div>
         <div class="container">
             <button class="btn">Change color</button>
             <button class="scndbtn">Нажми меня</button>
-            <input type="text">
+            <form action="">
+                <input class="note" type="text">
+            </form>
         </div>
     
 <script src="js/my.js"></script>

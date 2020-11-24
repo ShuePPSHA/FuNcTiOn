@@ -12,7 +12,7 @@ function addElement () {
     extraInner.id = id;
     const mainContainer = document.querySelector('.limit');
     mainContainer.appendChild(extraInner);
-    extraInner.innerHTML = `<span class="close" onclick="deleteElement('${id}')"></span>${id}`;
+    extraInner.innerHTML = `<span class="close" onclick="deleteElement('${id}')"></span><form action=""><textarea class="notice" name="" id="" cols="30" rows="10" ></textarea></form>`;
 }
 
 function deleteElement(id){
