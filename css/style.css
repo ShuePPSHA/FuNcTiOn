@@ -19,13 +19,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: url(../img/background.png);
 }
 
 .limit {
-  width: 800px;
+  max-width: 800px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 20px;
+  margin: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,13 +37,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: solid cyan;
-  background: url(../img/background.png);
+  border: solid 1px orange;
+  background: -webkit-gradient(linear, left top, left bottom, from(#45484d), to(black));
+  background: linear-gradient(to bottom, #45484d 0%, black 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
 }
 
 .limit__inner {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   background: -webkit-gradient(linear, left top, left bottom, from(#c5deea), color-stop(31%, #8abbd7), to(#066dab));
   background: linear-gradient(to bottom, #c5deea 0%, #8abbd7 31%, #066dab 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -51,8 +57,8 @@ body {
 }
 
 .edited {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f6e6b4), to(#ed9017));
   background: linear-gradient(to bottom, #f6e6b4 0%, #ed9017 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
