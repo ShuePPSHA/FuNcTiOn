@@ -95,6 +95,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', end
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
+  &:focus{
+    outline: none;
+  }
 }
 .scndbtn {
   justify-content: center;
@@ -121,6 +124,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', end
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }    
+  &:focus{
+    outline: none;
+  }
 }
 
 .note{

@@ -139,6 +139,10 @@ form {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.btn:focus {
+  outline: none;
+}
+
 .scndbtn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -178,6 +182,10 @@ form {
   border-radius: 10px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.scndbtn:focus {
+  outline: none;
 }
 
 .note {
