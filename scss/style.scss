@@ -50,13 +50,15 @@ body{
     width: 123px;
     height: 125px;
     margin: 0px;
-    
     background: none;
     border: none;
     resize: none;
     font-family: 'Architects Daughter', cursive;
     font-weight: bold;
     hyphens: auto;
+    &:focus{
+      outline: none;
+    }
   }
 
 .edited{

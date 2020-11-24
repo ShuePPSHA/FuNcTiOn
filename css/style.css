@@ -82,6 +82,10 @@ form {
           hyphens: auto;
 }
 
+.notice:focus {
+  outline: none;
+}
+
 .edited {
   width: 130px;
   height: 130px;
