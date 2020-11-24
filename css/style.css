@@ -227,6 +227,10 @@ form {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.note:focus {
+  outline: none;
+}
+
 .close {
   position: -webkit-sticky;
   position: sticky;
