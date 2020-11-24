@@ -17,6 +17,8 @@ background: url(../img/background.png);
 
 .limit {
   max-width: 800px;
+  min-width: 170px;
+  min-height: 170px;
   flex-wrap: wrap;
   padding: 20px;
   margin: 25px;
@@ -116,3 +118,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', end
   .close:after {
   transform: rotate(-45deg);
   }
+
+@media(max-width: 400px){
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+}
