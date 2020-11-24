@@ -42,14 +42,22 @@ body {
 .limit__inner {
   width: 150px;
   height: 150px;
-  background-color: blue;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c5deea), color-stop(31%, #8abbd7), to(#066dab));
+  background: linear-gradient(to bottom, #c5deea 0%, #8abbd7 31%, #066dab 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=0 );
+  /* IE6-9 */
   margin: 5px;
 }
 
 .edited {
-  width: 50px;
-  height: 50px;
-  background-color: green;
+  width: 150px;
+  height: 150px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f6e6b4), to(#ed9017));
+  background: linear-gradient(to bottom, #f6e6b4 0%, #ed9017 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=0 );
+  /* IE6-9 */
   margin: 5px;
 }
 
