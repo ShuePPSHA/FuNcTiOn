@@ -319,8 +319,8 @@ form {
             flex-direction: column;
   }
   .limit__inner {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     background: -webkit-gradient(linear, left top, left bottom, from(#c5deea), color-stop(31%, #8abbd7), to(#066dab));
     background: linear-gradient(to bottom, #c5deea 0%, #8abbd7 31%, #066dab 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -336,8 +336,8 @@ form {
             box-shadow: -6px 15px 20px 5px #000000;
   }
   .limit__inner:hover {
-    margin-left: -70px;
-    margin-top: 65px;
+    margin-left: -50px;
+    margin-top: 45px;
     -webkit-transform: rotate3d(5, -3, 0.5, -15deg) scale(1.2);
             transform: rotate3d(5, -3, 0.5, -15deg) scale(1.2);
     -webkit-box-shadow: -11px -6px 41px 21px #000000;
@@ -348,5 +348,8 @@ form {
     margin-top: 65px;
     -webkit-transform: rotate3d(5, -3, 0.5, -15deg) scale(1.2);
             transform: rotate3d(5, -3, 0.5, -15deg) scale(1.2);
+  }
+  .close:before, .close:after {
+    left: 100px;
   }
 }
