@@ -134,6 +134,8 @@ form {
   border: solid 1px orange;
   -webkit-transition: all 0.1s cubic-bezier(0.61, 1, 0.88, 1);
   transition: all 0.1s cubic-bezier(0.61, 1, 0.88, 1);
+  height: 50px;
+  padding-top: 15px;
 }
 
 .btn:hover {
@@ -179,6 +181,9 @@ form {
   border: solid 1px orange;
   -webkit-transition: all 0.1s cubic-bezier(0.61, 1, 0.88, 1);
   transition: all 0.1s cubic-bezier(0.61, 1, 0.88, 1);
+  height: 50px;
+  margin: 5px;
+  padding-top: 15px;
 }
 
 .scndbtn:hover {
@@ -209,10 +214,10 @@ form {
 }
 
 .note {
+  display: inline-block;
   border-radius: 5px;
   text-align: center;
-  padding: 20px;
-  margin: 5px;
+  padding: 10px;
   background: -webkit-gradient(linear, left top, left bottom, from(#45484d), to(black));
   background: linear-gradient(to bottom, #45484d 0%, black 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -222,6 +227,15 @@ form {
   border: solid 1px orange;
   -webkit-transition: all 0.1s cubic-bezier(0.61, 1, 0.88, 1);
   transition: all 0.1s cubic-bezier(0.61, 1, 0.88, 1);
+  width: 240px;
+  height: 125px;
+  margin: 5px;
+  resize: none;
+  font-family: 'Architects Daughter', cursive;
+  font-weight: bold;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 .note:hover {
@@ -266,8 +280,8 @@ form {
 
 .close:before, .close:after {
   position: absolute;
-  left: 3px;
-  top: -5px;
+  left: 120px;
+  top: 0px;
   content: ' ';
   height: 20px;
   width: 3px;
@@ -282,6 +296,16 @@ form {
 .close:after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 @media (max-width: 400px) {
