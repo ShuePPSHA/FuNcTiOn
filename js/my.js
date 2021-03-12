@@ -28,7 +28,7 @@ function deleteElement(id){
         }
         addElement()
     })
-
+    
     firstButton.addEventListener('click', () => {
         const squares = document.querySelectorAll('.limit__inner');
 
@@ -40,6 +40,3 @@ function deleteElement(id){
 
 }
 myFunction()
-
-
-
