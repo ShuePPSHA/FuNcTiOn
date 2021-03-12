@@ -14,7 +14,8 @@ function deleteElement(id){
     const secondButton = document.querySelector('.scndbtn');
 
     secondButton.addEventListener('click', () => {
-        const text = document.getElementById("nt").textContent; 
+        const text = document.getElementById("nt");
+        const note = text.value;
         function addElement () {
             const extraInner = document.createElement('div');
             const date = new Date
@@ -23,7 +24,7 @@ function deleteElement(id){
             extraInner.id = id;
             const mainContainer = document.querySelector('.limit');
             mainContainer.appendChild(extraInner);
-            extraInner.innerHTML = `<span class="close" onclick="deleteElement('${id}')"></span><form action=""><textarea class="notice" name="" id="" cols="30" rows="10" >('${text}')</textarea></form>`;
+            extraInner.innerHTML = `<span class="close" onclick="deleteElement('${id}')"></span><form action=""><textarea class="notice" name="" id="" cols="30" rows="10" >${note}</textarea></form>`;
         }
         addElement()
     })
