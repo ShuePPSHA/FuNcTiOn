@@ -1,3 +1,10 @@
+function savePage() {
+    localStorage['thispage'] = document.querySelector('html').innerHTML;
+}
+function loadPage() {
+    document.querySelector('html').innerHTML = localStorage['thispage'];
+}
+
 function changeStyle (element) {
     element.classList.toggle("edited");
 }
